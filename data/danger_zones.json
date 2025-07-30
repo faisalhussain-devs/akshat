@@ -1,0 +1,145 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "pothole",
+        "severity": "high",
+        "description": "Large pothole causing vehicle damage",
+        "reports": 23,
+        "lastUpdated": "2024-01-15T10:30:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.006, 40.7128]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "aggressive_zone",
+        "severity": "high",
+        "description": "High-speed overtaking zone with frequent accidents",
+        "reports": 45,
+        "lastUpdated": "2024-01-15T09:15:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0059, 40.7143]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "accident_hotspot",
+        "severity": "critical",
+        "description": "Intersection with multiple recent accidents",
+        "reports": 67,
+        "lastUpdated": "2024-01-15T11:45:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0045, 40.7135]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "road_damage",
+        "severity": "medium",
+        "description": "Cracked pavement and loose gravel",
+        "reports": 12,
+        "lastUpdated": "2024-01-15T08:20:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0070, 40.7120]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "blind_spot",
+        "severity": "high",
+        "description": "Sharp curve with limited visibility",
+        "reports": 31,
+        "lastUpdated": "2024-01-15T12:10:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0055, 40.7150]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "pothole",
+        "severity": "medium",
+        "description": "Moderate pothole in right lane",
+        "reports": 8,
+        "lastUpdated": "2024-01-15T07:30:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0080, 40.7110]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "aggressive_zone",
+        "severity": "medium",
+        "description": "Frequent tailgating and lane changes",
+        "reports": 19,
+        "lastUpdated": "2024-01-15T13:25:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0040, 40.7160]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "weather_hazard",
+        "severity": "high",
+        "description": "Flooding prone area during heavy rain",
+        "reports": 28,
+        "lastUpdated": "2024-01-15T06:45:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0065, 40.7105]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "construction",
+        "severity": "medium",
+        "description": "Lane closure and rough temporary surface",
+        "reports": 15,
+        "lastUpdated": "2024-01-15T14:00:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0035, 40.7145]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "accident_hotspot",
+        "severity": "high",
+        "description": "Highway merge point with frequent collisions",
+        "reports": 52,
+        "lastUpdated": "2024-01-15T15:30:00Z"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0075, 40.7125]
+      }
+    }
+  ]
+}
