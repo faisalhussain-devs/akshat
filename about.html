@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Perfect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#F59E0B',
+                        danger: '#EF4444'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">Perfect</h1>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="map.html" class="text-gray-700 hover:text-primary transition-colors">Map</a>
+                    <a href="about.html" class="text-primary font-semibold border-b-2 border-primary pb-1">About</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-700 hover:text-primary focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Home</a>
+                <a href="map.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Map</a>
+                <a href="about.html" class="block px-3 py-2 text-primary font-semibold">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-12 bg-gradient-to-br from-secondary to-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                About Perfect
+            </h1>
+            <p class="text-xl md:text-2xl leading-relaxed">
+                Revolutionizing road safety through AI-powered intelligence and collaborative data sharing
+            </p>
+        </div>
+    </section>
+
+    <!-- System Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        How Perfect Works
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Perfect combines cutting-edge artificial intelligence with crowd-sourced vehicle data to create 
+                        the most comprehensive road safety platform available today.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Our system uses advanced computer vision algorithms to detect road hazards in real-time, 
+                        while GPS technology precisely maps danger zones for other drivers to avoid.
+                    </p>
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">System Components</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span>Vehicle-mounted cameras and sensors</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span>YOLOv8 computer vision AI</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span>GPS location tracking</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span>Real-time data processing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-primary rounded-full mr-3"></div>
+                            <span>Cloud-based alert system</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Technology Stack
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Built with industry-leading technologies for maximum reliability and performance
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Computer Vision</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• YOLOv8 object detection</li>
+                        <li>• Real-time image processing</li>
+                        <li>• Hazard classification AI</li>
+                        <li>• Edge computing optimization</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Mapping & GPS</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Mapbox GL JS integration</li>
+                        <li>• High-precision GPS tracking</li>
+                        <li>• GeoJSON data format</li>
+                        <li>• Interactive heatmaps</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-16 h-16 bg-danger rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Real-time Processing</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Cloud-based infrastructure</li>
+                        <li>• WebSocket connections</li>
+                        <li>• Push notifications</li>
+                        <li>• Data synchronization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detection Categories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    What We Detect
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Our AI system identifies and categorizes various road hazards automatically
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Potholes</h3>
+                    <p class="text-sm text-gray-600">Road surface damage and holes</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Accident Hotspots</h3>
+                    <p class="text-sm text-gray-600">High-risk intersections and areas</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Aggressive Zones</h3>
+                    <p class="text-sm text-gray-600">Areas with dangerous driving behavior</p>
+                </div>
+
+                <div class="text-center p-6 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Weather Hazards</h3>
+                    <p class="text-sm text-gray-600">Flooding and weather-related risks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Our Vision
+            </h2>
+            <p class="text-xl mb-8 leading-relaxed">
+                Perfect aims to reduce road accidents by 25-30% through proactive hazard identification 
+                and real-time driver alerts. By combining the power of artificial intelligence with 
+                collaborative data sharing, we're creating safer roads for everyone.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div>
+                    <div class="text-4xl font-bold text-accent mb-2">25-30%</div>
+                    <p class="text-lg">Reduction in accidents</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-accent mb-2">Real-time</div>
+                    <p class="text-lg">Hazard detection</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-accent mb-2">AI-Powered</div>
+                    <p class="text-lg">Risk analysis</p>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <a href="map.html" class="inline-block bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transition-colors transform hover:scale-105">
+                    Explore the Risk Map
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-bold text-primary mb-2">Perfect</h3>
+            <p class="text-gray-400">AI-Powered Road Risk Mapping System</p>
+            <div class="mt-4 space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                <a href="map.html" class="text-gray-400 hover:text-white transition-colors">Map</a>
+                <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

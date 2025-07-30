@@ -1,5 +1,189 @@
 <!DOCTYPE html>
-<html>
-<head><title>Cursor Map Project</title></head>
-<body><h1>Hello from Cursor</h1></body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect - AI-Powered Road Risk Alerts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                        accent: '#F59E0B',
+                        danger: '#EF4444'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">Perfect</h1>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Home</a>
+                    <a href="map.html" class="text-gray-700 hover:text-primary transition-colors">Map</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button text-gray-700 hover:text-primary focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-primary font-semibold">Home</a>
+                <a href="map.html" class="block px-3 py-2 text-gray-700 hover:text-primary">Map</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-700 hover:text-primary">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Perfect: AI-Powered <br>
+                    <span class="text-accent">Road Risk Alerts</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Crowd-sourced vehicle intelligence to detect and alert real-time road dangers — 
+                    potholes, aggressive zones, accident hotspots, and more.
+                </p>
+                <a href="map.html" class="inline-block bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transition-colors transform hover:scale-105">
+                    View Live Risk Map
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    How Perfect Works
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Advanced AI and crowd-sourced data combine to create the most comprehensive road safety platform
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AI Detection</h3>
+                    <p class="text-gray-600">YOLOv8-powered computer vision identifies road hazards in real-time from vehicle cameras</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">GPS Mapping</h3>
+                    <p class="text-gray-600">Precise location tracking creates detailed maps of danger zones and risk patterns</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg bg-gray-50 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-danger rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Real-time Alerts</h3>
+                    <p class="text-gray-600">Instant notifications warn drivers of upcoming hazards and dangerous road conditions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Making Roads Safer
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">25-30%</div>
+                    <p class="text-xl text-gray-600">Reduction in accidents</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2">Real-time</div>
+                    <p class="text-xl text-gray-600">Hazard detection</p>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-danger mb-2">AI-Powered</div>
+                    <p class="text-xl text-gray-600">Risk analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Experience Safer Roads?
+            </h2>
+            <p class="text-xl mb-8">
+                Explore our live risk map and see how AI is revolutionizing road safety
+            </p>
+            <a href="map.html" class="inline-block bg-accent hover:bg-yellow-500 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg transition-colors transform hover:scale-105">
+                View Live Risk Map
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-bold text-primary mb-2">Perfect</h3>
+            <p class="text-gray-400">AI-Powered Road Risk Mapping System</p>
+            <div class="mt-4 space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                <a href="map.html" class="text-gray-400 hover:text-white transition-colors">Map</a>
+                <a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
 </html>
